@@ -104,6 +104,9 @@
   box-sizing: border-box;
 }
 
+.color-white{
+  color: #fff;
+}
 /*---------------------------------
     typography css start 
 ---------------------------------*/
@@ -1483,7 +1486,39 @@ input[type=color] {
   bottom: 0;
   position: absolute;
 }
+.content-sec .pahra{
+  font-size: 20px;
+line-height: 36px;
+/* identical to box height, or 150% */
 
+text-align: center;
+letter-spacing: 0.1em;
+text-transform: capitalize;
+}
+.awardss .pro-content h6{
+  font-size: 17px;
+}
+.awardss .pro-content {
+  padding: 20px 8px;
+}
+.view-cta {
+  text-transform: uppercase;
+  font-size: 16px;
+    letter-spacing: 1px;
+    color: #1a1a1a
+}
+.view-cta i{
+  padding: 15px 16px;
+  margin-right: 10px;
+  color: #fff;
+  background: var(--tp-theme-1);
+  border-radius: 50px;
+}
+.pro-ject .bactext{
+  color: rgba(112, 112, 112, 0.1);
+      bottom: -80px;
+    left: 180px;
+}
 /*----------------------------------------*/
 /*  00. Modal CSS START
 /*----------------------------------------*/
@@ -1942,6 +1977,7 @@ right: 0;
   position: absolute;
   z-index: 222;
   width: 100%;
+  padding: 8px 0px;
 }
 
 .header__sticky {
@@ -3568,6 +3604,56 @@ right: 0;
 .ab-tab-info {
   position: relative;
 }
+.award{
+  position: relative;
+}
+.services-area .bactext{
+  position: absolute;
+  top: 107px;
+  right: -320px;
+  left: inherit;
+  /* font-family: 'Origin'; */
+  font-style: normal;
+  font-weight: 900;
+  font-size: 147px;
+  line-height: 64px;
+  text-transform: uppercase;
+  color:#C5C5C51A;
+  z-index: 0;
+}
+.cert .view-cta{
+  color: var(--tp-common-white);
+}
+.bactext{
+  content: '';
+  position: absolute;
+  bottom: -90px;
+  left: -90px;
+  /* font-family: 'Origin'; */
+  font-style: normal;
+  font-weight: 900;
+  font-size: 147px;
+  line-height: 64px;
+  text-transform: uppercase;
+  color: rgba(221, 221, 221, 0.4);
+  z-index: -1;
+}
+.more-cta{
+  color: var(--tp-common-white);
+  font-size: 18px;
+  letter-spacing: 1px;
+
+}
+.more-cta:hover{
+  color: var(--tp-common-white);
+}
+.more-cta:hover i{
+  margin-left: 12px;
+}
+.more-cta i{
+  margin-left: 7px;
+  padding-top: 1px;
+}
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .ab-tab-info {
     margin-bottom: 80px;
@@ -4513,7 +4599,7 @@ right: 0;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 700px;
+  height: 900px;
   position: relative;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -4537,16 +4623,20 @@ right: 0;
 .video__button-2 a {
   width: 120px;
   height: 120px;
-  background: var(--tp-theme-1);
+  background: transparent;
   border-radius: 50%;
   color: var(--tp-common-white);
   transition: 0.3s;
   display: inline-block;
-  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 16px 32px 0px rgb(0 0 0 / 4%);
   line-height: 120px;
   text-align: center;
   font-size: 20px;
   transition: 0.3s;
+  border: 3px solid #fff;
+}
+.video__button-2 a .fa-light .fa-play{
+  font-size: 31px;
 }
 .video__button-2 a:hover {
   background: var(--tp-common-white);
@@ -4617,6 +4707,15 @@ right: 0;
   border-radius: 6px;
   z-index: 1;
   position: relative;
+}
+
+
+/* services */
+.awward{
+  margin-right: -91px;
+}
+.awward .single-services{
+  background: transparent;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .appoinment-cta__content {
@@ -5575,7 +5674,7 @@ letter-spacing: 0.1em;
   text-align: center;
   border-radius: 6px;
   position: absolute;
-  top: -30px;
+  bottom: -38px;
   right: 20px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
@@ -5601,8 +5700,9 @@ letter-spacing: 0.1em;
   border-color: var(--tp-theme-1);
 }
 .blog__item-2-df {
-  border: 1px solid var(--tp-border-2);
   border-radius: 6px;
+  background: #FFFFFF;
+  box-shadow: 10px 10px 30px rgba(102, 102, 102, 0.22);
 }
 .blog__thumb {
   position: absolute;
@@ -5714,14 +5814,13 @@ letter-spacing: 0.1em;
   color: var(--tp-theme-1);
 }
 .blog__btn-2 a {
-  border-top: 1px solid var(--tp-border-2);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 20px 40px;
   background: var(--tp-common-white);
   font-size: 16px;
-  color: var(--tp-heading-primary);
+  color: var(--tp-theme-1);
   font-weight: var(--tp-fw-sbold);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -6399,6 +6498,32 @@ letter-spacing: 0.1em;
   }
 }
 
+/* counter-div */
+.counter-area{
+  background-image: url('/assets/img/project-bg.png');
+  padding:20% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 180px;
+}
+.minus{
+  margin-bottom: -440px;
+}
+.proj{
+  width: 100%;
+}
+.conter-wrapper{
+  margin-top: 11%;
+}
+.count-div h5{
+  font-size: 50px;
+  color: var(--tp-common-white);
+}
+.count-div .absm-title{
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: var(--tp-common-white);
+}
 /*----------------------------------------*/
 /*  03. Process CSS START
 /*----------------------------------------*/
@@ -7896,6 +8021,37 @@ letter-spacing: 0.1em;
 /*----------------------------------------*/
 /*  00. Footer CSS START
 /*----------------------------------------*/
+footer{
+  background-image: url('/assets/img/footer.png');
+}
+.top-footer{
+  background: linear-gradient(91.4deg, rgba(0, 69, 181, 0.9) 0%, rgba(0, 88, 232, 0.9) 100%);
+  padding:4% 0%;
+  margin-bottom: 4%;
+}
+.top-footer h3{
+  font-size: 34px;
+    padding-right: 70px;
+    color: var(--tp-common-white);
+}
+.top-footer p{
+  color: var(--tp-common-white);
+  padding-right: 100px;
+}
+.top-footer a{
+  filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.25));
+  background: #FFFFFF;
+  border-radius: 7px;
+  padding: 20px 27px;
+  /* display: block; */
+  margin-left: 110PX;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.top-footer a i{
+  margin-left: 20px;
+}
 .footer-area {
   position: relative;
   z-index: 1;
@@ -7924,7 +8080,7 @@ letter-spacing: 0.1em;
   margin-bottom: 40px;
 }
 .footer__widget-content p {
-  color: #b4b8bb;
+  color:var(--tp-common-white);;
 }
 .footer__links ul li {
   list-style: none;
@@ -7936,7 +8092,7 @@ letter-spacing: 0.1em;
 .footer__links ul li a {
   font-size: 16px;
   font-weight: var(--tp-fw-sbold);
-  color: #b4b8bb;
+  color: var(--tp-common-white);
   position: relative;
 }
 .footer__links ul li a::before {
@@ -8037,7 +8193,7 @@ letter-spacing: 0.1em;
   font-size: 15px;
   font-weight: 700;
   color: var(--tp-common-white);
-  background: var(--tp-theme-1);
+  background: linear-gradient(91.4deg, #0045B5 0%, #0058E8 100%);
   height: 60px;
   line-height: 60px;
   text-align: center;
@@ -8078,21 +8234,21 @@ letter-spacing: 0.1em;
   margin-right: 20px;
 }
 .footer__social-icon a {
-  font-size: 15px;
-  margin-right: 15px;
-  color: #727980;
+  font-size: 20px;
+  margin-right: 10px;
+  color: #fff;
 }
 .footer__social-icon a:hover {
   color: var(--tp-common-white);
 }
 .footer__copyright {
   padding: 30px 40px;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
+border-top: 1px solid #fff;
 }
 .footer__copyright-text p {
   font-size: 16px;
   margin-bottom: 0;
+  color: var(--tp-common-white);
 }
 .footer__copyright-text p a {
   font-weight: var(--tp-fw-sbold);
@@ -8108,6 +8264,7 @@ letter-spacing: 0.1em;
   font-weight: var(--tp-fw-sbold);
   color: var(--tp-heading-primary);
   margin-right: 45px;
+  color: var(--tp-common-white);
   transition: 0.3s;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -8117,6 +8274,7 @@ letter-spacing: 0.1em;
 }
 .footer__copyright-links a:last-child {
   margin-right: 0;
+  color: var(--tp-common-white);
 }
 .footer__copyright-links a:hover {
   color: var(--tp-theme-1);

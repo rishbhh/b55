@@ -403,7 +403,7 @@
 	// 00. Services slider activation Js
 	if (jQuery(".services__slider").length > 0) {
 		let services__slide = new Swiper('.services__slider', {
-			slidesPerView: 3,
+			slidesPerView: 2,
 			spaceBetween: 30,
 			// direction: 'vertical',
 			loop: true,
@@ -437,10 +437,10 @@
 					slidesPerView: 2,
 				},
 				1200: {
-					slidesPerView: 3,
+					slidesPerView: 2,
 				},
 				1400: {
-					slidesPerView: 3,
+					slidesPerView: 2,
 					}
 				}
 		});
