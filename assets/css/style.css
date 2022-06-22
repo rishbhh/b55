@@ -1724,6 +1724,23 @@ text-transform: uppercase;
 
 color: #1A1A1A;
 }
+.product .project .pro-content{
+  padding: 0;
+  text-align: center;
+}
+.product .project .pro-content h6{
+  text-transform: capitalize;
+}
+.p-heading {
+  font-size: 20px ;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #1A1A1A;
+  padding-left: 20px;
+}
+.hide-dot{
+  display: none;
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .section__wrapper .r-text span {
     font-size: 12px;
