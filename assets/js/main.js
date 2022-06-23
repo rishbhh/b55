@@ -267,6 +267,7 @@
 		let brand__slider = new Swiper('.brand__slider', {
 			slidesPerView: 1,
 			spaceBetween: 30,
+			
 			// direction: 'vertical',
 			loop: true,
 			autoplay: {
@@ -445,7 +446,53 @@
 				}
 		});
 	}
-
+// 00. Services slider activation Js
+if (jQuery(".services__slider2").length > 0) {
+	let services__slide = new Swiper('.services__slider2', {
+		slidesPerView: 2,
+		spaceBetween: 30,
+		// direction: 'vertical',
+		nav: true,
+			navText: ['<button class="nav-left"><i class="far fa-angle-left"></i></button>', '<button class="nav-right"><i class="far fa-angle-right"></i></button>'],
+		loop: true,
+		autoplay: {
+				delay: 6000,
+			},
+		
+		// If we need pagination
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+		// Navigation arrows
+		navigation: {
+			nextEl: '.bs-button-next',
+			prevEl: '.bs-button-prev',
+		},
+		
+		// And if we need scrollbar
+		scrollbar: {
+			el: '.swiper-scrollbar',
+		},
+		breakpoints: {
+			0: {
+				slidesPerView: 1,
+			},
+			550: {
+				slidesPerView: 1,
+			},
+			768: {
+				slidesPerView: 2,
+			},
+			1200: {
+				slidesPerView: 4,
+			},
+			1400: {
+				slidesPerView: 4,
+				}
+			}
+	});
+}
 	////////////////////////////////////////////////////
 	// 00. banner__slider activation Js
 	if (jQuery(".banner__slider").length > 0) {
