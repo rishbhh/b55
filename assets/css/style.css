@@ -1863,6 +1863,19 @@ color: #1A1A1A;
 .product .project .pro-content h6{
   text-transform: capitalize;
 }
+.product-slider .slider-contant{
+  text-align:left;
+}
+.product-slider .slider-contant .slider-title {
+  font-size: 55px;
+  color: var(--tp-common-white);
+  text-transform: uppercase;
+}
+.product-slider .slider-contant p {
+    font-size: 20px;
+    color: var(--tp-common-white);
+    padding: 0px 0%;
+}
 .p-heading {
   font-size: 20px ;
   text-transform: uppercase;
@@ -2564,6 +2577,18 @@ right: 0;
 }
 .header__inner {
   padding: 20px 0;
+}
+.adress-div{
+  box-shadow: 1px 1px 18px #efefef;
+  margin-right: 40px;
+  padding: 40px;
+}
+.adress-div h6{
+  color: #CE0404;
+  font-size: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .header__inner-2 {
@@ -5874,6 +5899,17 @@ letter-spacing: 0.1em;
 /*----------------------------------------*/
 /*  03. Blog CSS START
 /*----------------------------------------*/
+.blog-main-h{
+  font-size: 50px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.blog__wrapper h2{
+  /* font-size: 27px;
+  line-height: 40px;
+  letter-spacing: 1px;
+  text-transform: uppercase; */
+}
 .blog__item {
   position: relative;
   padding: 35px 38px;
@@ -6121,7 +6157,16 @@ letter-spacing: 0.1em;
   color: var(--tp-theme-1);
 }
 .tp-blog__sm-title {
-  font-size: 24px;
+  font-size: 29px;
+  text-transform: uppercase;
+
+}
+.blog__wrapper ul{
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+.blog__wrapper ul li{
+  padding: 10px 0;
 }
 .tp-blog-nav button {
   position: absolute;
@@ -7734,6 +7779,10 @@ letter-spacing: 0.1em;
 .faq__area .faq__content .accordion-item {
   border-left: 0;
   border-right: 0;
+  box-shadow: 1px 1px 18px #0000002b;
+    margin-bottom: 30px;
+border: none;
+padding:0 10px;
 }
 .faq__area .faq__content .accordion-button:focus {
   box-shadow: none;
@@ -7746,7 +7795,7 @@ letter-spacing: 0.1em;
   left: 0;
   right: 10px;
   color: #c0c1c1;
-  top: 20%;
+  top: 29%;
 }
 @media (max-width: 575px) {
   .faq__area .faq__content .accordion-button::after {
@@ -7887,15 +7936,15 @@ letter-spacing: 0.1em;
 .contact__form .contact-filed {
   position: relative;
 }
-.contact__form .contact-filed::after {
+/* .contact__form .contact-filed::after {
   content: "\f007";
   position: absolute;
   left: 30px;
   top: 18px;
   font-family: "Font Awesome 5 Pro";
   color: var(--tp-heading-primary);
-}
-.contact__form .contact-filed.contact-icon-mail::after {
+} */
+/* .contact__form .contact-filed.contact-icon-mail::after {
   content: "\f0e0";
 }
 .contact__form .contact-filed.contact-icon-message::after {
@@ -7903,18 +7952,20 @@ letter-spacing: 0.1em;
 }
 .contact__form .contact-filed.contact-icon-website::after {
   content: "\f0ac";
-}
+} */
 .contact__form .contact-filed input {
   width: 100%;
   height: 60px;
-  border: 1px solid transparent;
-  padding-left: 55px;
+  border-bottom: 1px solid #b9b9b9 !important;
+  padding-left: 25px;
   padding-right: 30px;
   color: var(--tp-heading-primary);
-  border-radius: 6px;
+  border-radius: 0;
   font-weight: 500;
   transition: 0.3s;
-  background: #f9f9f9;
+  background: transparent;
+  border: none;
+  margin-bottom: 20px;
 }
 .contact__form .contact-filed input::-moz-placeholder {
   color: #aeaeae;
@@ -7939,10 +7990,11 @@ letter-spacing: 0.1em;
   color: var(--tp-heading-primary);
   font-weight: 500;
   transition: 0.3s;
-  border-radius: 6px;
   box-shadow: none;
   outline: none;
-  background: #f9f9f9;
+  background:transparent;
+  border-bottom: 1px solid #b9b9b9 !important;
+  border: none;
   resize: none;
 }
 .contact__form .contact-filed textarea::-moz-placeholder {
@@ -8019,7 +8071,7 @@ letter-spacing: 0.1em;
 .contact__map {
   line-height: 0;
   position: relative;
-  margin-top: -60px;
+  margin-bottom: -120px;
 }
 .contact__map-wrap iframe {
   height: 800px;
