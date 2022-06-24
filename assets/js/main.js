@@ -681,7 +681,7 @@ if (jQuery(".services__slider2").length > 0) {
 			slidesPerView: 1,
 			spaceBetween: 0,
 			slidesPerView: 1,
-			mousewheel: true,
+			mousewheel: false,
 			// direction: 'vertical',
 			loop: true,
 			autoplay: {

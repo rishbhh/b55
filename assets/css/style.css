@@ -43,13 +43,34 @@
 /*  01. THEME DEFAULT CSS START
 /*----------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;display=swap");
+@font-face {
+  font-family: Origin-Regular;
+  src: url(/assets/fonts/Origin-Regular.woff);
+}
+@font-face {
+  font-family: Origin-light;
+  src: url(/assets/fonts/Origin-Light.woff);
+}
+@font-face {
+  font-family: Origin-heavy;
+  src: url(/assets/fonts/Origin-Heavy.woff);
+}
+@font-face {
+  font-family: Origin-bold;
+  src: url(/assets/fonts/Origin-Bold.woff);
+}
+@font-face {
+  font-family: Ageo;
+  src: url(/assets/fonts/Ageo.woff);
+}
 :root {
+  
   /**
   @font family declaration
   */
-  --tp-ff-body: 'DM Sans', sans-serif;
-  --tp-ff-heading: 'DM Sans', sans-serif;
-  --tp-ff-p: 'DM Sans', sans-serif;
+  --tp-ff-body: 'Origin-Regular';
+  --tp-ff-heading: 'Origin-heavy';
+  --tp-ff-p: 'Ageo';
   --tp-ff-fontawesome: "Font Awesome 6 Pro";
   /**
   @color declaration
@@ -1886,6 +1907,14 @@ color: #1A1A1A;
 .hide-dot{
   display: none;
 }
+.know-m{
+  font-size: 16px;
+  color: #CE0404;
+}
+.know-m i{
+  font-size: 13px;
+  margin-left: 10px;
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .section__wrapper .r-text span {
     font-size: 12px;
@@ -2987,6 +3016,7 @@ right: 0;
 .slider-contant .slider-title {
   font-size: 120px;
   color: var(--tp-common-white);
+  font-family: Origin-bold;
 }
 .slider-contant p {
   font-size: 20px;
