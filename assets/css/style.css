@@ -5985,7 +5985,7 @@ letter-spacing: 0.1em;
   font-size: 40px;
   font-weight: var(--tp-fw-sbold);
   color: var(--tp-common-white);
-  width: 80px;
+  width: 73px;
   height: 80px;
   line-height: 60px;
   background: var(--tp-theme-1);
@@ -6002,9 +6002,10 @@ letter-spacing: 0.1em;
 }
 .blog__item-2-date a span {
   font-size: 14px;
-  color: #ffcdb6;
+  color: #ffffff;
   margin-bottom: 0;
   position: relative;
+  letter-spacing: 1px;
   top: -38px;
   display: inline-block;
 }
