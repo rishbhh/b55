@@ -2552,6 +2552,9 @@ right: 0;
   .header__top-2 {
     display: none;
   }
+  .logo {
+    width: 110px;
+  }
 }
 .header__sm-links {
   position: relative;
@@ -3038,6 +3041,9 @@ right: 0;
   }
   .main-menu ul li{
     margin-right: 27px;
+  }
+  .product-slider .slider-content{
+    margin-left: 11%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
@@ -8170,7 +8176,7 @@ padding:0 10px;
 }
 @media (max-width: 575px) {
   .sidebar__area {
-    width: 290px;
+    width: 100%;
   }
 }
 .sidebar__area.sidebar-opened {
@@ -8337,7 +8343,8 @@ padding:0 10px;
   font-size: 32px;
   cursor: pointer;
   position: relative;
-  top: 5px;
+  top: -5px;
+  right: 20px;
 }
 
 .body-overlay {
