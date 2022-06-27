@@ -1792,7 +1792,8 @@ text-transform: capitalize;
 }
 @media (max-width: 575px) {
   .section__wrapper .section__title {
-    font-size: 26px;
+    font-size: 28px;
+    padding-top: 0;
   }
 }
 .section__wrapper-2 .section__title {
@@ -8138,6 +8139,7 @@ padding:0 10px;
   }
   .about__area{
     overflow: hidden;
+    padding: 10px;
   }
   .bactext {
     content: '';
@@ -8152,7 +8154,7 @@ padding:0 10px;
     font-style: normal;
     font-weight: 900;
     font-size: 71px;
-    line-height: 64px;
+    line-height: 67px;
     width: 100%;
     text-transform: uppercase;
     color: rgba(221, 221, 221, 0.4);
