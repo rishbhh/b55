@@ -2948,7 +2948,7 @@ right: 0;
 /*  03. SLIDER CSS START
 /*----------------------------------------*/
 .sliderm-height {
-  height: 970px;
+  height: 100vh;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px) {
   .sliderm-height {
@@ -3035,6 +3035,9 @@ right: 0;
 @media only screen and (min-width: 1200px) and (max-width: 1399px), only screen and (min-width: 992px) and (max-width: 1199px) {
   .slider-contant .slider-title {
     font-size: 100px;
+  }
+  .main-menu ul li{
+    margin-right: 27px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
