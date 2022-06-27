@@ -2238,6 +2238,12 @@ right: 0;
   margin-right: 40px;
   position: relative;
 }
+.main-slider .swiper-wrapper{
+  height: 100vh;
+}
+.main-slider .swiper-wrapper .item-slider::before, .main-slider .swiper-wrapper .item-slider::after{
+  height: 100vh;
+}
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .main-menu ul li {
     margin-right: 22px;
