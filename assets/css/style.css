@@ -8136,6 +8136,28 @@ padding:0 10px;
   .contact__map-wrap iframe {
     height: 500px;
   }
+  .about__area{
+    overflow: hidden;
+  }
+  .bactext {
+    content: '';
+    position: absolute;
+    bottom: 
+-55px
+;
+    left: 
+-30px
+;
+    /* font-family: 'Origin'; */
+    font-style: normal;
+    font-weight: 900;
+    font-size: 71px;
+    line-height: 64px;
+    width: 100%;
+    text-transform: uppercase;
+    color: rgba(221, 221, 221, 0.4);
+    z-index: -1;
+}
 }
 .contact__map-icon {
   position: absolute;
@@ -8197,6 +8219,7 @@ padding:0 10px;
   .sidebar__wrapper {
     padding: 20px;
   }
+ 
 }
 .sidebar__close {
   position: absolute;
