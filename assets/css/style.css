@@ -1653,7 +1653,8 @@ text-transform: capitalize;
   text-transform: uppercase;
   font-size: 16px;
     letter-spacing: 1px;
-    color: #1a1a1a
+    color: #1a1a1a;
+    font-family: 'Origin-heavy';
 }
 .view-cta i{
   padding: 15px 16px;
@@ -1792,8 +1793,8 @@ text-transform: capitalize;
 }
 @media (max-width: 575px) {
   .section__wrapper .section__title {
-    font-size: 28px;
-    padding-top: 0;
+    font-size: 33px;
+    padding-top: 10px;
   }
 }
 .section__wrapper-2 .section__title {
@@ -1928,7 +1929,7 @@ color: #1A1A1A;
   font-size: 40px;
   line-height: 1.3;
   padding-top: 20px;
-  margin-left: 30px;
+  margin-left: 0px;
   text-transform: uppercase;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -2959,10 +2960,19 @@ right: 0;
   .sliderm-height {
     height: 850px;
   }
+ 
 }
 @media (max-width: 575px) {
   .sliderm-height {
     height: 700px;
+  }
+
+  .mean-container .mean-nav{
+    margin-top: 1%;
+  }
+  .mean-container .mean-nav ul li a {
+    width: 100%;
+    padding: 20px 0;
   }
 }
 
@@ -5199,8 +5209,22 @@ color: #FFFFFF;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .project__content .p-title {
-    font-size: 30px;
+    font-size: 27px;
   }
+  .project__content{
+    top: 33%;
+  }
+  .project__content p {
+  line-height: 20px;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+    padding: 0px 0%;
+}
+.project__button {
+  visibility: visible !important;
+  opacity: 1 !important;
+  transition: 0.3s;
+}
 }
 .project__button {
   visibility: hidden;
@@ -5515,6 +5539,24 @@ letter-spacing: 0.1em;
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .testimonial__item-box .quote__text {
     font-size: 20px;
+  }
+ 
+  .testimonial__item-3 {
+    padding-right: 0px;
+    z-index: 3;
+  }
+  .testimonial__item-3 .section__wrapper{
+    margin-bottom: 10px;
+  }
+  .testimonial__item-3 .section__wrapper .section__title{
+    margin-bottom: 0px;
+  }
+  .testimonial__item-3 .review__text{
+    padding: 0px 10px;
+  }
+  .testimonial__item-3 .review__info{
+    margin-bottom: 10px;
+    padding: 0px 20px;
   }
 }
 .testimonial__item-box .author__info {
@@ -6885,6 +6927,22 @@ letter-spacing: 0.1em;
   .process__images {
     margin-bottom: 50px;
   }
+  .minus {
+    margin-bottom: -210px;
+}
+.count-div {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.testimonial__area {
+  margin: 10px 0;
+}
+.testimonial__area .section-2__wrapper{
+  margin-bottom: 20px;
+}
+.section-2__wrapper{
+  margin-top: 0px;
+}
 }
 .process__images .image-2 {
   margin-top: 100px;
@@ -8161,6 +8219,16 @@ padding:0 10px;
     color: rgba(221, 221, 221, 0.4);
     z-index: -1;
 }
+.project{
+  margin-bottom:20px;
+  margin-right: 0;
+}
+.services-2{
+  margin: 0;
+}
+.awardss .project{
+  padding: 0 10px;
+}
 }
 .contact__map-icon {
   position: absolute;
@@ -8219,9 +8287,26 @@ padding:0 10px;
   background: var(--tp-grey-5);
 }
 @media (max-width: 575px) {
+  .sidebar__content{
+    margin-top: 20%;
+  }
   .sidebar__wrapper {
     padding: 20px;
+    background: transparent;
   }
+  .mean-container .mean-nav ul li a.mean-expand {
+    margin-top: 15px;
+    padding: 0 !important;
+    line-height: 14px;
+    border: none !important;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    color: var(--tp-heading-primary);
+    line-height: 30px;
+    top: 0;
+    font-weight: bolder;
+}
  
 }
 .sidebar__close {
@@ -8699,8 +8784,34 @@ border-top: 1px solid #fff;
   margin-left: -20px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
+  footer {
+    background-image: url(/assets/img/footer.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
   .footer__col-3 {
     margin-left: 0;
+  }
+  .top-footer{
+    text-align: center;
+    padding:20% 0;
+  }
+  .top-footer h3, .top-footer p{
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+  .top-footer a{
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .footer__widget{
+    text-align: center;
+  }
+  .footer__social-info{
+    justify-content: center;
+  }
+  .footer__copyright{
+    text-align: center;
   }
 }
 .footer__post-item {
