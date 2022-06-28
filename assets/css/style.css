@@ -1546,6 +1546,7 @@ input[type=color] {
 }
 @media (max-width: 575px), only screen and (min-width: 576px) and (max-width: 767px) {
   .page__title {
+    text-align: center;
     font-size: 45px;
   }
 }
@@ -1605,7 +1606,7 @@ input[type=color] {
 }
 @media (max-width: 575px) {
   .page__title-height {
-    min-height: 450px;
+    min-height: 100vh;
   }
 }
 .page__title-overlay {
@@ -3995,6 +3996,27 @@ text-transform: uppercase;
   .ab-tab-info {
     margin-bottom: 80px;
   }
+  .mission .mis-vis{
+    margin-right: 0px;
+    margin-bottom: 10%;
+  }
+  .core-box {
+    margin-right: 0px;
+    text-align: center;
+    margin-bottom: 19%;
+}
+.cult img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+.sub-h {
+  font-size: 29px;
+  line-height: 53px;
+  text-align: center;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  color: #1A1A1A;
+}
 }
 
 .ab-left-content {
@@ -6061,6 +6083,16 @@ letter-spacing: 0.1em;
   .blog__item-2-date a {
     top: 20px;
   }
+  .blog-main-h {
+    font-size: 39px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    /* font-family: 'Origin-bold'; */
+}
+.blog__wrapper{
+  margin-top: 30px;
+}
 }
 .blog__item-2-date a span {
   font-size: 14px;
