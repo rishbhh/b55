@@ -2016,8 +2016,13 @@ color: #1A1A1A;
     font-size: 30px;
   }
 }
-.section-2__wrapper .section-prah{
 
+/* .section-2__wrapper .para-padding{
+  padding: 0 10%;
+} */
+
+.section-2__wrapper .section-prah{
+  padding: 0 10%;
   font-weight: 500;
   font-size: 20px;
   line-height: 36px;
@@ -5369,6 +5374,25 @@ color: #FFFFFF;
   position: relative;
   z-index: 3;
 }
+
+.testimonial__area .testimonial-bg{
+  background-color: #f7f7f7;
+  height: 715px;
+  width: 100%;
+  position: absolute;
+  z-index: -2;
+}
+
+.testimonial__area .bactext{
+    top: 37%;
+    right: 0;
+    left: inherit;
+}
+
+.testimonial__area .container{
+  padding-top: 10%;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .testimonial__area-2 {
     padding-bottom: 60px;
@@ -6930,7 +6954,7 @@ letter-spacing: 0.1em;
   padding-bottom: 180px;
 }
 .minus{
-  margin-bottom: -440px;
+  margin-bottom: -500px;
 }
 .proj{
   width: 100%;
