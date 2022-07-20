@@ -4022,6 +4022,7 @@ text-transform: uppercase;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .ab-tab-info {
+    text-align: center;
     margin-bottom: 80px;
   }
   .mission .mis-vis{
@@ -4057,7 +4058,9 @@ text-transform: uppercase;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .ab-left-content {
+    text-align: center;
     margin-left: 0;
+    margin-top: 80px;
   }
 }
 .ab-left-content .abd-text {
