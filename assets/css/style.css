@@ -147,6 +147,13 @@
   text-align: center;
 }
 
+@media (min-width: 991px) and (max-width: 1200px) {
+  .main-menu ul li a { font-size: 12px !important; }
+  .menu-padding { padding-left: 0 !important; }
+  .main-menu ul li { margin-right: 21px !important; }
+
+
+}
 
 @media (max-width: 1366px) {
   .top-footer .container a{
@@ -160,6 +167,11 @@
     margin-right: 0 !important;
     margin-bottom: 20px !important;
   }
+.footer-area{
+  text-align: center;
+}
+
+
 }
 
 @media (min-width: 992px) {
